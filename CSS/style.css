@@ -1,0 +1,90 @@
+/* tela inicial */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("https://images8.alphacoders.com/134/1342645.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.conteudo {
+    position: relative;
+    z-index: 1;
+
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.conteudo h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    color: #fff4cf;
+    text-shadow:
+        0 0 10px #ffd978,
+        0 0 25px #f3b83f,
+        2px 3px 5px #34215d;
+
+    margin: 0 0 15px;
+}
+
+.conteudo p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: white;
+    text-shadow: 0 2px 8px #172b64;
+    margin-bottom: 35px;
+}
+
+.botao {
+    padding: 16px 45px;
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    font-weight: bold;
+    font-family: Georgia, serif;
+
+    color: #fff8df;
+    background: linear-gradient(135deg, #387cce, #243c83);
+
+    border: 2px solid #ffe29a;
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 15px #ffd97880,
+        0 6px 15px #17204d80;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+
+     transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.botao:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #5598ec, #354da0);
+    box-shadow: 0 0 25px #ffdf8c;
+}
+
+
+
+
