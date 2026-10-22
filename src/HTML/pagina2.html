@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pagina2.css">
+    <title>Dentro do jogo</title>
+</head>
+<body>
+
+
+<video id="video-fundo" autoplay playsinline>
+    <source src="../assets/videoplayback.mp4" type="video/mp4">
+</video>
+
+<!-- Primeira pausa: escolher o viajante -->
+<div id="tela-viajante" class="tela">
+    <h2>Escolha seu viajante</h2>
+
+    <div class="botoes-viajante">
+        <button onclick="escolherViajante('Lumine')">
+            Lumine
+        </button>
+
+        <button onclick="escolherViajante('Aether')">
+            Aether
+        </button>
+    </div>
+</div>
+
+<!-- Segunda pausa: escolher o nome -->
+<div id="tela-nome" class="tela">
+    <h2>Como devemos te chamar, viajante?</h2>
+
+    <input
+        type="text"
+        id="nome-jogador"
+        placeholder="Digite seu nome"
+        maxlength="20"
+    >
+
+    <button onclick="continuarJornada()">
+        Continuar jornada
+    </button>
+
+</div>
+
+<div id="tela-final" style="display: none;">
+    <h2>Prepare-se para a aventura!</h2>
+    <button onclick="comecarJogo()">
+        Começar a jogar
+    </button>
+
+</div>
+
+<script src="/src/js/script.js"></script>
+
+
+</div>
+
+
+     
+</body>
+
+
+
+</html>

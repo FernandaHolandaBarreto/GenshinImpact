@@ -1,0 +1,134 @@
+<!-- ========Explore o MUndo====== -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura da Viajante</title>
+    <link rel="stylesheet" href="../CSS/jornada1.css">
+    <script src="../CSS/jornada1.css" defer></script>
+</head>
+<body>
+
+    <main class="jogo">
+        <header class="painel">
+            <div>
+                <h1>Aventura da Viajante</h1>
+                <p>Explore o mundo e descubra novos caminhos!</p>
+            </div>
+            <div class="vida">
+                <span>♥</span> 100 / 100
+            </div>
+        </header>
+
+        <section id="cenario" class="cenario">
+            <div class="sol"></div>
+            <div class="montanhas montanhas-fundo"></div>
+            <div class="montanhas montanhas-frente"></div>
+
+            <div class="nuvem nuvem-1"></div>
+            <div class="nuvem nuvem-2"></div>
+
+            <div class="plataforma"></div>
+
+            <div id="jogador" class="jogador">
+                <svg id="arte-personagem"
+                     viewBox="0 0 100 140"
+                     role="img"
+                     aria-label="Viajante loira de fantasia">
+
+                    <!-- Cabelo -->
+                    <path d="M27 34 Q18 5 48 7 Q78 4 76 34
+                             L82 76 L70 65 L30 70 L19 49 Z"
+                          fill="#e9bf63"/>
+
+                    <!-- Rosto -->
+                    <ellipse cx="50" cy="39" rx="21" ry="26"
+                             fill="#ffe0bd"/>
+
+                    <!-- Franja -->
+                    <path d="M29 34 Q25 9 49 11
+                             Q72 8 72 31 L57 25
+                             L44 35 L39 25 L31 42 Z"
+                          fill="#f5d77c"/>
+
+                    <!-- Olhos -->
+                    <ellipse cx="42" cy="40" rx="3" ry="5"
+                             fill="#4a9b91"/>
+                    <ellipse cx="59" cy="40" rx="3" ry="5"
+                             fill="#4a9b91"/>
+
+                    <!-- Sorriso -->
+                    <path d="M44 51 Q50 56 56 51"
+                          fill="none" stroke="#bd786b"
+                          stroke-width="2" stroke-linecap="round"/>
+
+                    <!-- Corpo e vestido -->
+                    <path d="M36 64 L64 64 L75 111
+                             L25 111 Z"
+                          fill="#f6f1e9" stroke="#d4c7b5"
+                          stroke-width="2"/>
+
+                    <!-- Detalhes dourados -->
+                    <path d="M50 66 L50 106 M37 81 L63 81"
+                          stroke="#d9b45e" stroke-width="3"/>
+
+                    <!-- Capa -->
+                    <path d="M34 68 L20 85 L17 117
+                             L31 108 L39 77 Z"
+                          fill="#e9c86e"/>
+
+                    <!-- Braços -->
+                    <path d="M35 70 L23 91 L29 96"
+                          fill="none" stroke="#ffe0bd"
+                          stroke-width="8" stroke-linecap="round"/>
+                    <path d="M65 70 L77 91 L71 96"
+                          fill="none" stroke="#ffe0bd"
+                          stroke-width="8" stroke-linecap="round"/>
+
+                    <!-- Pernas -->
+                    <path d="M39 108 L37 126 M61 108 L64 126"
+                          stroke="#ffe0bd" stroke-width="9"
+                          stroke-linecap="round"/>
+
+                    <!-- Botas -->
+                    <path d="M29 126 L41 126 L43 133 L28 133 Z"
+                          fill="#b68a54"/>
+                    <path d="M57 126 L68 126 L73 133 L57 133 Z"
+                          fill="#b68a54"/>
+                </svg>
+
+                <div id="efeito-ataque" class="efeito-ataque">✦</div>
+            </div>
+
+            <div class="mensagem" id="mensagem">
+                Use as setas ou A e D para andar!
+            </div>
+        </section>
+
+        <section class="controles">
+            <div class="movimento">
+                <button class="botao" data-acao="esquerda"
+                        aria-label="Mover para a esquerda">◀</button>
+                <button class="botao" data-acao="direita"
+                        aria-label="Mover para a direita">▶</button>
+            </div>
+
+            <div class="acoes">
+                <button class="botao botao-pulo" data-acao="pular">
+                    PULAR
+                </button>
+                <button class="botao botao-ataque" data-acao="atacar">
+                    ✦ ATACAR
+                </button>
+            </div>
+        </section>
+
+        <p class="instrucoes">
+            Teclado: A/D ou ←/→ para andar · Espaço para pular · J para atacar
+        </p>
+    </main>
+
+</body>
+</html>
